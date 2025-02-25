@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 authors = [
-    { name = "Brian Weigand", email = "brian@triad-dev.com" }
+    { name = "Brian Weigand", email = "brian@triad-dev.com" },
     { name = "Jonathan Zero", email = "jonathan@triad-dev.com" }
 ]
 requires-python = ">=3.13"
