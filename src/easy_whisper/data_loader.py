@@ -90,6 +90,12 @@ def load_local_dataset(
         
         dataset = Dataset.from_dict({"audio": audio_files, "sentence": sentences})
         dataset = dataset.cast_column("audio", Audio())
+        if 'sentence' not in dataset or 'audio' not in dataset:
+            raise ValueError("Either audio or sentence column found in dataset")
+        dataset_columns = dataset.column_names
+        dataset_columns.remove('sentence')
+        dataset_columns.remove('audio')
+        dataset.remove_columns(dataset_columns)
         return dataset
     else:
         raise ValueError("Either 'audio' and 'transcription' lists or a 'dataset_dir' must be provided.")
