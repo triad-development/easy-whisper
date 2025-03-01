@@ -309,7 +309,7 @@ def train_model(
     logger.info("Creating data collator...")
     data_collator = DataCollatorSpeechSeq2SeqWithPadding(processor=processor)
     
-    # 4. laod and prepare model
+    # 4. load and prepare model
     logger.info(f"Loading model: {model_name_or_path}")
     try:
         device_map = "auto" if torch.cuda.is_available() else None
@@ -441,7 +441,7 @@ def evaluate_model(
     """
     logger.info(f"Evaluating model on {len(dataset)} samples")
     
-    # craete data collator
+    # create data collator
     data_collator = DataCollatorSpeechSeq2SeqWithPadding(processor=processor)
     
     # create dataloader
