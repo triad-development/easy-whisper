@@ -8,3 +8,10 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Ruff-generated files
+.ruff-cache/
+
+# Testing files
+test-data/
+whisper-finetuned/

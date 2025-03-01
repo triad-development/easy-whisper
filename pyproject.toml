@@ -20,6 +20,7 @@ dependencies = [
     "openai-whisper",
     "peft>=0.14.0",
     "ruff>=0.9.7",
+    "scikit-learn>=1.6.1",
     "tensorboard>=2.19.0",
     "transformers>=4.49.0",
 ]
@@ -30,3 +31,10 @@ build-backend = "hatchling.build"
 
 [tool.uv.sources]
 openai-whisper = { git = "https://github.com/openai/whisper.git" }
+
+[tool.ruff]
+target-version = "py313"
+
+[tool.ruff.format]
+indent-style = "tab"
+line-ending = "lf"
