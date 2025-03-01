@@ -1,13 +1,19 @@
 [project]
 name = "easy-whisper"
 version = "0.0.1"
-description = "Easy to use wrapper for fine tuning whisper models using for any multilingual ASR dataset using Huggingface transformers."
+description = "Easy to use wrapper for fine tuning whisper models using PEFT-LoRA + BNB INT-8 for any multilingual ASR dataset using Huggingface transformers."
 readme = "README.md"
 authors = [
     { name = "Brian Weigand", email = "brian@triad-dev.com" },
-    { name = "Jonathan Zero", email = "jonathan@triad-dev.com" }
+    { name = "Jonathan Zero", email = "jonathan@triad-dev.com" },
 ]
 requires-python = ">=3.13"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 3 - Alpha",
+    "Environment :: GPU :: NVIDIA CUDA :: 12 :: 12.4",
+    "Operating System :: OS Independent",
+]
 dependencies = [
     "accelerate>=1.4.0",
     "bitsandbytes>=0.45.3",
@@ -24,6 +30,12 @@ dependencies = [
     "tensorboard>=2.19.0",
     "transformers>=4.49.0",
 ]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/triad-development/easy-whisper"
+Issues = "https://github.com/triad-development/easy-whisper/issues"
 
 [build-system]
 requires = ["hatchling"]
