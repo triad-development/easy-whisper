@@ -1,6 +1,6 @@
 [project]
 name = "easy-whisper"
-version = "0.0.1"
+version = "0.0.1-alpha.1"
 description = "Easy to use wrapper for fine tuning whisper models using PEFT-LoRA + BNB INT-8 for any multilingual ASR dataset using Huggingface transformers."
 readme = "README.md"
 authors = [
