@@ -7,7 +7,6 @@ from pydub import AudioSegment
 from typing import List, Optional
 from sklearn.model_selection import train_test_split
 from easy_whisper import logger
-from datasets import load_dataset
 
 
 @lru_cache(maxsize=128)

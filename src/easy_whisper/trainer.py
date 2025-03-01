@@ -8,8 +8,7 @@ from datasets import DatasetDict, Audio
 from tqdm import tqdm
 from torch.utils.data import DataLoader
 import evaluate
-from easy_whisper import logger as main_logger
-from easy_whisper.hf_login import ensure_hf_login
+from easy_whisper import logger as main_logger, ensure_hf_login
 from transformers import (
 	WhisperProcessor,
 	WhisperForConditionalGeneration,
